@@ -1,0 +1,12 @@
+# RMA for affy human ST array 1.0
+# load the affy library
+library(pd.huex.1.0.st.v2) 
+library(RSQLite)
+library(DBI)
+library(affy)
+library(oligo)
+# Read in the CEL files in the directory, then normalize the data
+celFiles <- list.celfiles() # should be CEL file, not CEL.gz
+affyRaw <- read.celfiles(celFiles)
+eset <- rma(affyRaw)
+write.table(eset, 'XXXXXXX.txt', sep="\t")
