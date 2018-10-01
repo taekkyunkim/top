@@ -10,7 +10,7 @@
 	Cancellation of make
 	7. make install
 	Installation
-	8. make uninstall
+	8. make uninstall or make -n install
 	Uninstallation 
 	
 	
