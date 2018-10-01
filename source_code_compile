@@ -1,0 +1,17 @@
+	1. wget XXXXXXXX.tar.gz  
+	2. tar -zxvf XXXXXXXX.tar.gz
+	3. configure --prefix=/home/XXXX
+	, where you want to install. You can also include other options 
+	4. make distclean 
+	Remove all environments installed by configure
+	5. make
+	Compile; if it is failed, "make clean" and "make" again.
+	6. make clean
+	Cancellation of make
+	7. make install
+	Installation
+	8. make uninstall
+	Uninstallation 
+	
+	
+	Reference : http://areumgury.blogspot.com/2012/10/blog-post.html
